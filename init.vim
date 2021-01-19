@@ -18,12 +18,12 @@ Plug 'ncm2/ncm2-path'
 Plug 'scrooloose/syntastic'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
+Plug 'rhysd/github-complete.vim'
+Plug 'hugolgst/vimsence'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-emoji'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
-"Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
 Plug 'preservim/nerdcommenter'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'godlygeek/tabular'
@@ -228,3 +228,13 @@ augroup emoji_complete
   " Emoji command to replace emoji name with emoji e.g. :apple: with 🍎
   command! -nargs=* Emoji %s/:\([^:]\+\):/\=emoji#for(submatch(1), submatch(0))/g
 augroup END
+
+"vimsence stuff
+let g:vimsence_client_id = '755856191959334932'
+let g:vimsence_small_text = 'NeoVim'
+let g:vimsence_small_image = 'neovim'
+let g:vimsence_editing_details = 'Editing: {}'
+let g:vimsence_editing_state = 'Working on: {}'
+let g:vimsence_file_explorer_text = 'In NERDTree'
+let g:vimsence_file_explorer_details = 'Looking for files'
+let g:vimsence_custom_icons = {'filetype': 'iconname'}
