@@ -35,8 +35,8 @@ Plug 'mhinz/vim-startify'
 Plug 'dylanaraps/wal.vim'
 call plug#end()
 
+"colorscheme palenight
 colorscheme wal
-
     syntax on
 
 	" Markdown Edits
@@ -87,6 +87,7 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
 
 set nocompatible
 map <Leader>tt :vnew term://zsh<CR>

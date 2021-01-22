@@ -1,0 +1,3 @@
+rpc.checkidle: false
+rpc.showProblems: false
+rpc.workspaceElapsedTime: true
